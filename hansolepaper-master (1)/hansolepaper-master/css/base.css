@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+  /* 배너 */
+  section>div.sub_banner{margin-bottom: 70px;}
+  div.sub_banner>div:first-child{
+                            height:20px;
+                            margin-bottom:10px;
+                            background:url('../images/ptn.jpg');
+  }
+  div.sub_banner>div:last-child{height: 144px;overflow:hidden;position:relative;}
+  div.sub_banner>div:first-child>img{width: 100%;position: absolute;left:0;top: -1000px;}
+   
+  /* 컨텐츠 */
+  .sub_content{overflow: hidden;}
+  .sub_content>aside{float: left;width: 190px;}
+  
+  nav.sub_nav>h3{font-size: 26px;text-align: center;border-bottom: 2px solid #00a651;
+                 padding-bottom:10px ;}
+ 
+  nav.sub_nav>ul>li{height: 44px;border-bottom: 1px solid rgba(91, 99, 91,0.3);
+                    font-weight: bold;
+                    text-indent: 10px; line-height: 44px;background: #f0f0f0;
+                    position: relative;transition: 0.2s;}
+                    nav.sub_nav>ul>li:hover{background: #cccc;}
+  nav.sub_nav>ul>li:hover::after{content: ' >';color: #007dc6;font-weight:bolder;
+                                 position: absolute;right: 10px;top: 0;}
+ 
+
+  /* 아티클 */
+  article{float: right;width: 990px;}
+  
+  .content_tit{overflow: hidden;
+                          border-bottom: 2px solid #007dc6;
+                           padding-bottom: 10px;margin-bottom: 70px;}
+  .content_tit>h3{float: left;font-size: 26px;}
+  .content_tit>p{padding-top: 12px; float: right;font-size:14px;color:#5b6366;}
+  .content_tit>p>span{font-weight: bold;}
+  
+  /* 컨텐츠 베이스 */
+  
+  .content_base>h4{margin-bottom: 42px; font-size: 28px;color: #007dc6;font-weight: bold;}
+  
+  /* 컨텐츠 이미지 */
+  .content_base>ul.content_img{overflow: hidden;margin-bottom: 70px;}
+  .content_img>li{float: left;height: 342px;overflow: hidden;}
+  .content_img>li:nth-child(1){width: 495px;}
+  .content_img>li:nth-child(2){width: 247px;}
+  .content_img>li:nth-child(3){width: 248px;overflow: hidden;}
+  .content_img>li:nth-child(3)>div{height: 171px;}
+  .content_img>li img{filter: grayscale(80%);transition: 0.2s;}
+  .content_img>li img:hover{filter: none;}
+  
+  /* 컨텐츠 텍스트 */
+  .content_base>div.content_txt{margin-bottom: 38px;}
+  .content_base>div.content_txt>h5{font-size: 20px;margin-bottom: 18px;}
+  .content_base>div.content_txt>p{font-size: 14px;color: #5b6366;margin-bottom: 10px;}
+
